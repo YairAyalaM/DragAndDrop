@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DropzoneController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -12,7 +13,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [DropzoneController::class,'index']);
+Route::post('/upload',[DropzoneController::class,'store'])->name('dropzone.store');
