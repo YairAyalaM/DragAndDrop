@@ -9,7 +9,6 @@
     <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
 </head>
-
 <body>
     <h3>Drag and Drop</h3>
     <form action="{{ route('dropzone.store') }}" method="POST" enctype="multipart/form-data" id="image-upload" class="dropzone">
