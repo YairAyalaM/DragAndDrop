@@ -23,17 +23,19 @@
         border: 2px dashed #c3c3c3;
         padding: 40px;
     }
-
+/* hover dropzone */
     @media(hover: hover){
         .dropzone:hover{
-            background-color: #e0ffcd;
+            background-color: #edf7fa;
             transition: 0.3s;
         }
     }
 
     .dropzone:active{
-        background-color: #e0ffcd;
+        background-color: #edf7fa;
     }
+
+    /* end hover dropzone */
 
     .form-container .icon i{
         font-size: 3em;
@@ -75,7 +77,7 @@
     new Dropzone("#image-upload", {
         thumbnailWidth: 200,
         maxFilesize: 1,
-        acceptedFiles: ".jpeg, .jpg, .png, .gif"
+        acceptedFiles: ".jpeg, .jpg, .png, .gif, .pdf"
     })
 </script>
 
